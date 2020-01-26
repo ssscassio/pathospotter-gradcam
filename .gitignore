@@ -1,0 +1,10 @@
+# Spider stuff
+.spyproject
+__pycache__
+
+# Local teste stuff
+**/*[Tt]este*
+**/*[Tt]est*
+
+# .DS_Store (MacOs)
+**/.DS_Store
