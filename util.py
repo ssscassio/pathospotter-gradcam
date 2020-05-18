@@ -41,13 +41,13 @@ def create_folder_if_not_exists(folder):
 This will create a folder for each class inside the `cam_folder`
 
 
-cam_fodler: ex.: './cam/'
+cam_folder: ex.: './cam/'
 dataset_tuple: ex.: [('class_name_1', ['filename1', 'filename2']),('class_name_2', ['filename3', 'filename4'])]
 
 '''
 def create_cam_folders(cam_folder, dataset_tuple):
     for class_name, files_names in dataset_tuple:
-        create_folder_if_not_exists(cam_folder+class_name)
+        create_folder_if_not_exists(os.path.join(cam_folder,class_name))
 
 
 '''
