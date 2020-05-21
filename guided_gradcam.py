@@ -24,7 +24,7 @@ def compile_saliency_function(model, activation_layer):
     return K.function([input_img, K.learning_phase()], [saliency])
 
 
-def guided_grad_cam(model, cam, layer_name, image_to_evaluate, width, height):
+def guided_grad_cam(model, cam, layer_name, image_to_evaluate):
     # Resize to input shape using bi-linear interpolation
     cam_heatmap = cv2.resize(cam, (224, 224))
     register_gradient()

@@ -66,3 +66,8 @@ def save_model_summary(model, file_path):
     with open(file_path, 'w') as fh:
         # Pass the file handle in as a lambda function to make it callable
         model.summary(line_length=100, print_fn=lambda x: fh.write(x + '\n'))
+
+
+def extract_file_name(file_path):
+    base_name = os.path.basename(file_path)
+    return os.path.splitext(base_name)[0]

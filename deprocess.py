@@ -3,6 +3,9 @@ import cv2
 import numpy as np
 from enum import Enum
 
+from math import ceil, sqrt
+from matplotlib import pyplot as plt
+
 
 class Method(Enum):
     CAM_IMAGE_JET = 0
@@ -14,6 +17,10 @@ class Method(Enum):
 
 def convert_to_bgr(image):
     return cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
+
+
+def convert_to_rgb(image):
+    return cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
 
 
 def cam_image(cam, image_bgr, color_map=cv2.COLORMAP_JET):
@@ -67,3 +74,30 @@ def create_cam_image(cam, image_rgb, visualize_mode):
         return just_cam(cam, shape, cv2.COLORMAP_BONE)
     elif visualize_mode == Method.CAM_AS_WEIGHTS:
         return cam_as_weights(cam, image)
+
+
+def create_guided_cam_image(cam, image_rgb, cam_rate=0.5):
+    image = convert_to_bgr(image_rgb)
+    height, width, _ = image.shape
+    cam = cv2.resize(cam, (width, height))
+    return np.uint8(cam * cam_rate) + np.uint8(image * (1-cam_rate))
+
+
+def plot(cams, filename):
+    n_items = len(cams)
+    n_rows = ceil(sqrt(n_items))
+    n_columns = ceil(n_items/n_rows)
+    fig, axes = plt.subplots(
+        n_rows, n_columns, figsize=(3*n_columns, 3*n_rows))
+    fig.suptitle(filename + " - Visualization: " + cams[0].method)
+    axes_ravel = axes.ravel()
+
+    for i in range(n_rows*n_columns):
+        axes_ravel[i].axis('off')  # Remove Axis
+        if i < n_items:
+            axes_ravel[i].imshow(convert_to_rgb(cams[i].image))
+            axes_ravel[i].set_title(cams[i].layer)
+
+    fig.subplots_adjust(hspace=0.3)
+
+    return plt
