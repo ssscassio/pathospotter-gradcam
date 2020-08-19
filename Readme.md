@@ -54,13 +54,13 @@ This will generate a summary file under the model's path on which you will be ab
 
 Useful list of possible methods to be used on `--method` option
 
-| METHOD         | PREVIEW - max_pooling2d_33                                                                            | PREVIEW - conv2d_41                                                                           |
-| -------------- | ----------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
-| CAM_IMAGE_JET  | <img src="./experiments/visualization/max_pooling2d_33/CAM_IMAGE_JET.png" height="200" width="200"/>  | <img src="./experiments/visualization/conv2d_41/CAM_IMAGE_JET.png" height="200" width="200"/> |
-| CAM_IMAGE_BONE | <img src="./experiments/visualization/max_pooling2d_33/CAM_IMAGE_BONE.png" height="200" width="200"/> | <img src="./experiments/visualization/conv2d_41/CAM_IMAGE_JET.png" height="200" width="200"/> |
-| CAM_AS_WEIGHTS | <img src="./experiments/visualization/max_pooling2d_33/CAM_AS_WEIGHTS.png" height="200" width="200"/> | <img src="./experiments/visualization/conv2d_41/CAM_IMAGE_JET.png" height="200" width="200"/> |
-| JUST_CAM_JET   | <img src="./experiments/visualization/max_pooling2d_33/JUST_CAM_JET.png" height="200" width="200"/>   | <img src="./experiments/visualization/conv2d_41/CAM_IMAGE_JET.png" height="200" width="200"/> |
-| JUST_CAM_BONE  | <img src="./experiments/visualization/max_pooling2d_33/JUST_CAM_BONE.png" height="200" width="200"/>  | <img src="./experiments/visualization/conv2d_41/CAM_IMAGE_JET.png" height="200" width="200"/> |
+| METHOD         | PREVIEW - max_pooling2d_33                                                                            | PREVIEW - conv2d_41                                                                            |
+| -------------- | ----------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| CAM_IMAGE_JET  | <img src="./experiments/visualization/max_pooling2d_33/CAM_IMAGE_JET.png" height="200" width="200"/>  | <img src="./experiments/visualization/conv2d_41/CAM_IMAGE_JET.png" height="200" width="200"/>  |
+| CAM_IMAGE_BONE | <img src="./experiments/visualization/max_pooling2d_33/CAM_IMAGE_BONE.png" height="200" width="200"/> | <img src="./experiments/visualization/conv2d_41/CAM_IMAGE_BONE.png" height="200" width="200"/> |
+| CAM_AS_WEIGHTS | <img src="./experiments/visualization/max_pooling2d_33/CAM_AS_WEIGHTS.png" height="200" width="200"/> | <img src="./experiments/visualization/conv2d_41/CAM_AS_WEIGHTS.png" height="200" width="200"/> |
+| JUST_CAM_JET   | <img src="./experiments/visualization/max_pooling2d_33/JUST_CAM_JET.png" height="200" width="200"/>   | <img src="./experiments/visualization/conv2d_41/JUST_CAM_JET.png" height="200" width="200"/>   |
+| JUST_CAM_BONE  | <img src="./experiments/visualization/max_pooling2d_33/JUST_CAM_BONE.png" height="200" width="200"/>  | <img src="./experiments/visualization/conv2d_41/JUST_CAM_BONE.png" height="200" width="200"/>  |
 
 ## Roadmap
 
