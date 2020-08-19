@@ -1,6 +1,6 @@
 # PathoSpotter - Layer visualizer
 
-## Architecture
+## Grad-cam Architecture
 
 ![](./experiments/archicteture/archGradCam.jpg)
 
