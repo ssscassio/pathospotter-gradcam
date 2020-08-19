@@ -1,5 +1,9 @@
 # PathoSpotter - Layer visualizer
 
+## Architecture
+
+![](./experiments/archicteture/archGradCam.jpg)
+
 ## Single Image Analysis
 
 ### Setup
@@ -52,18 +56,18 @@ Useful list of possible methods to be used on `--method` option
 
 | METHOD         | PREVIEW                                                                                               |
 | -------------- | ----------------------------------------------------------------------------------------------------- |
-| CAM_IMAGE_JET  | <img src="./experiments/visualization/max_pooling2d_33/CAM_IMAGE_JET.png" height="200" width="200"/>  |
-| CAM_IMAGE_BONE | <img src="./experiments/visualization/max_pooling2d_33/CAM_IMAGE_BONE.png" height="200" width="200"/> |
-| CAM_AS_WEIGHTS | <img src="./experiments/visualization/max_pooling2d_33/CAM_AS_WEIGHTS.png" height="200" width="200"/> |
-| JUST_CAM_JET   | <img src="./experiments/visualization/max_pooling2d_33/JUST_CAM_JET.png" height="200" width="200"/>   |
-| JUST_CAM_BONE  | <img src="./experiments/visualization/max_pooling2d_33/JUST_CAM_BONE.png" height="200" width="200"/>  |
+| CAM_IMAGE_JET  | <img src="./experiments/visualization/max_pooling2d_33/CAM_IMAGE_JET.png" height="200" width="200"/>  | <img src="./experiments/visualization/conv2d_41/CAM_IMAGE_JET.png" height="200" width="200"/> |
+| CAM_IMAGE_BONE | <img src="./experiments/visualization/max_pooling2d_33/CAM_IMAGE_BONE.png" height="200" width="200"/> | <img src="./experiments/visualization/conv2d_41/CAM_IMAGE_JET.png" height="200" width="200"/> |
+| CAM_AS_WEIGHTS | <img src="./experiments/visualization/max_pooling2d_33/CAM_AS_WEIGHTS.png" height="200" width="200"/> | <img src="./experiments/visualization/conv2d_41/CAM_IMAGE_JET.png" height="200" width="200"/> |
+| JUST_CAM_JET   | <img src="./experiments/visualization/max_pooling2d_33/JUST_CAM_JET.png" height="200" width="200"/>   | <img src="./experiments/visualization/conv2d_41/CAM_IMAGE_JET.png" height="200" width="200"/> |
+| JUST_CAM_BONE  | <img src="./experiments/visualization/max_pooling2d_33/JUST_CAM_BONE.png" height="200" width="200"/>  | <img src="./experiments/visualization/conv2d_41/CAM_IMAGE_JET.png" height="200" width="200"/> |
 
 ## Roadmap
 
 - [ ] Improve main.py file to deal with folders as input and process multiple input images at once
 - [ ] Upload report
 - [ ] Add experiments images on Readme to improve explanation
-- [ ] Add grad-cam architecture image on Readme
+- [x] Add grad-cam architecture image on Readme
 - [x] Add code references
 
 ## Reference Projects
