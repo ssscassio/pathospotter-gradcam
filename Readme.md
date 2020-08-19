@@ -2,6 +2,12 @@
 
 ## Single Image Analysis
 
+### Setup
+
+```
+pip install -r requirements.txt
+```
+
 ### Running
 
 ```
