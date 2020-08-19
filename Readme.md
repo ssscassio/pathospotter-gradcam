@@ -64,4 +64,10 @@ Useful list of possible methods to be used on `--method` option
 - [ ] Upload report
 - [ ] Add experiments images on Readme to improve explanation
 - [ ] Add grad-cam architecture image on Readme
-- [ ] Add code references
+- [x] Add code references
+
+## Reference Projects
+
+- [Pytorch-grad-cam](https://github.com/jacobgil/pytorch-grad-cam/blob/master/gradcam.py)
+- [Keras-grad-cam](https://github.com/jacobgil/keras-grad-cam)
+- [Grad-cam](https://github.com/ramprs/grad-cam)
