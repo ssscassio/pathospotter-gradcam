@@ -68,7 +68,7 @@ rsa==3.4.2
 scikit-image==0.17.2
 scikit-learn==0.20.3
 scipy==1.2.1
-Scrapy==1.5.1
+Scrapy==2.6.1
 service-identity==17.0.0
 six==1.14.0
 sklearn==0.0
